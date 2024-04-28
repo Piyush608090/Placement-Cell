@@ -1,0 +1,22 @@
+{
+  "name": "placement-cell",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A Place Cell Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-express": "^1.2.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "fast-csv": "^5.0.1",
+    "mongoose": "^8.3.2",
+    "nodemon": "^3.1.0",
+    "router": "^1.3.8"
+  }
+}
