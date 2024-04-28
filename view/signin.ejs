@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Placement Cell</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Placement Cell</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/signup">SignUp</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/">SignIn</a>
+            </li>
+            </ul>
+        </nav>       
+    </head>
+
+    <body>
+
+         
+        <div class="back">
+            <div class="div-center">
+              <div class="content">
+                <%if(errorMessage){%>
+                  <div class="alert alert-danger" role="alert">
+                    <%= errorMessage %>
+                    </div>
+                  <%}%>
+               
+                <h3>Login</h3>
+                <hr />
+                <form action="/createsession" method="POST">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" name = "email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" name = "password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Login</button>
+                  <hr />
+                  <button type="button" class="btn btn-link"><a href="/signup">Signup</button></a>
+                </form>
+          
+              </div>
+          
+          
+              </span>
+            </div>
+
+    </body>
+    <style>
+        .back {
+  background: #e2e2e2;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+}
+
+.div-center {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 1em 2em;
+  border-bottom: 2px solid #ccc;
+  display: table;
+}
+
+div.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+    </style>
+    </html>
+        
